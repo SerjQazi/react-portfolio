@@ -1,32 +1,32 @@
-.background {
+/* .background {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-image: radial-gradient(#f5f5f5, #eceff1, #cfd8dc);
-}
+} */
 
-.wrapper {
+/* .wrapper {
   max-width: 1650px;
   width: 90%;
   margin: 0 auto;
-}
+} */
 
-.contentCard {
-  /* min-height: 67vh; */
+/* .contentCard {
+  min-height: 67vh;
   max-height:67vh;
   background-color: #f5f5f5;
   box-shadow: 5px 5px 20px 5px rgba(38,50,56,0.35);
-}
+} */
 
-.homepage {
+/* .homepage {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f5f5f5;
-}
+} */
 
-.leftSide, .rightSide {
+/* .leftSide, .rightSide {
   width: 100%;
   height: 100%;
-}
+} */
