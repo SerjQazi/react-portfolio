@@ -5,19 +5,19 @@ import selfPortrait from '../../assets/selfPortrait.jpg'
 const Home = () => {
   return (
     <div className='flex justify-center items-center flex-wrap lg:flex-nowrap bg-slate-100'>
-      <div className="w-full pr-8 pl-20 bg-slate-100">
-        <h3 className='uppercase font-sans text-5xl font-bold leading-none'>
+      <div className="w-full py-8 lg:py-2 xl:py-6 px-16 lg:px-8 xl:pl-20 bg-slate-100">
+        <h3 className='uppercase font-sans text-2xl md:text-3xl xl:text-5xl font-bold leading-normal'>
           Hi There!
         </h3>
-        <div className="flex">
-          <h2 className='font-sans font-bold text-6xl leading-normal'>
+        <div className="flex mb-2 md:mb-4 xl:mb-6">
+          <h2 className='font-sans font-bold text-3xl md:text-4xl xl:text-6xl leading-normal'>
             I'M
           </h2>
-          <h1 className='uppercase font-cursive font-bold text-6xl ml-6 leading-normal text-yellow-500'>
+          <h1 className='uppercase font-cursive font-bold text-3xl md:text-4xl xl:text-6xl ml-4 xl:ml-6 leading-normal text-yellow-500'>
             Serj Qazi
           </h1>
         </div>
-        <h3 className='uppercase font-sans font-bold text-xl bg-yellow-500 w-fit mb-4 px-2.5 py-1'>
+        <h3 className='uppercase font-sans font-bold md:text-sm xl:text-xl bg-yellow-500 w-fit mb-4 px-2.5 py-1'>
           Frontend Developer
         </h3>
 
@@ -27,7 +27,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="px-4 py-2 mt-10 mb-8 w-fit font-bold rounded-lg bg-yellow-500 
+        <div className="px-4 py-2 xl:mt-10 xl:mb-8 w-fit font-bold rounded-lg bg-yellow-500 
         hover:shadow-lg hover:shadow-yellow-500/50 hover:scale-110 duration-700 cursor-pointer">
           <Link to={"./about"} className="uppercase font-sans font-bold">More About Me</Link>
         </div>
