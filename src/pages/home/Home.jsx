@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import React from 'react'
-import selfPortrait from '../../assets/selfPortrait.jpg'
+import selfPortrait from '../../assets/selfPortrait.png'
+import selfPortraitSlate from '../../assets/selfPortraitSlate.png'
+import selfPortraitYellow from '../../assets/selfPortraitYellow.png'
+
+import Social from '../../components/Social';
 
 const Home = () => {
   return (
     <div className='flex justify-center items-center flex-wrap lg:flex-nowrap bg-slate-100'>
-      <div className="w-full py-8 lg:py-2 xl:py-6 px-16 lg:px-8 xl:pl-20 bg-slate-100">
+      <div className="w-full lg:w-3/4 py-8 lg:py-0 xl:py-0 px-16 lg:px-8 xl:pl-20 bg-slate-100">
         <h3 className='uppercase font-sans text-2xl md:text-3xl xl:text-5xl font-bold leading-normal'>
           Hi There!
         </h3>
@@ -28,12 +32,19 @@ const Home = () => {
         </div>
 
         <div className="px-4 py-2 xl:mt-10 xl:mb-8 w-fit font-bold rounded-lg bg-yellow-500 
-        hover:shadow-lg hover:shadow-yellow-500/50 hover:scale-110 duration-700 cursor-pointer">
+        hover:shadow-lg hover:shadow-yellow-500/50 hover:scale-110 duration-500 cursor-pointer">
           <Link to={"./about"} className="uppercase font-sans font-bold">More About Me</Link>
         </div>
+
+        <div className="socialContainer w-10/12 bg-slate-400 rounded-xl shadow-xl">
+
+          <Social/>
+        </div>
+
       </div>
-      <div className="w-full h-fit">
-          <img className="img" src={selfPortrait} alt="Self Portrait" />
+
+      <div className="w-full">
+          <img className="img" src={selfPortraitSlate} alt="Self Portrait"/>
       </div>
     </div>
   )
