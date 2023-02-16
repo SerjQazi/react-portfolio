@@ -1,53 +1,40 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { linkedin, twitter, github, myresume, pdf, pdfYellow, githubYellow, twitterYellow, linkedinYellow } from '../assets/';
+import { resume } from '../assets/';
+
+import { AiOutlineLinkedin, RxTwitterLogo, TbBrandGithub, BsFileEarmarkPdf } from 'react-icons/all'
 
 
 const Social = () => {
-
-  const [linkedinIcon, setLinkedinIcon] = useState(linkedin);
-  const [twitterIcon, setTwitterIcon] = useState(twitter);
-  const [gitHubIcon, setGitHubIcon] = useState(github);
-  const [pfdIcon, setPdfIcon] = useState(pdf);
-
   return (
-    <div >
-      <ul className='flex flex-nowrap justify-center align-middle'>
+    <div className='' >
+      <ul className='w-fit flex flex-col lg:flex-row flex-nowrap justify-center align-middle bg-slate-400 rounded-xl'>
         
-
-        <li className='flex justify-center align-middle w-full cursor-pointer border-r-2 border-slate-700'
-          onMouseOver={() => setLinkedinIcon(linkedinYellow)}
-          onMouseOut={() => setLinkedinIcon(linkedin)}
-        >
-          <Link className='px-10 py-2 hover:scale-110 duration-300' to='https://www.linkedin.com/in/serjqazi/' target='_blank' rel='noopener noreferrer'>
-            <img src={linkedinIcon} alt="Serj Qazi linkedin profile" />
+        <li className='flex justify-center align-middle w-full cursor-pointer lg:border-r-2 border-slate-700 rounded-tr-lg rounded-tl-lg hover:bg-slate-700 duration-700'>
+          <Link className='text-slate-600 text-3xl sm-text-4xl hover:text-yellow-500 px-1 py-5 sm:py-6 lg:px-10 hover:scale-110 duration-700 focus:text-yellow-500 focus:outline-none focus:bg-slate-700 focus:rounded-tr-lg focus:rounded-tl-lg' 
+          to='https://www.linkedin.com/in/serjqazi/' target='_blank' rel='noopener noreferrer'>
+            <AiOutlineLinkedin/>
           </Link>
         </li>
 
-        <li className='flex justify-center align-middle w-full cursor-pointer border-r-2 border-slate-700' 
-          onMouseOver={() => setGitHubIcon(githubYellow)}
-          onMouseOut={() => setGitHubIcon(github)}
-        >
-          <Link className='px-10 py-2 hover:scale-110 duration-300' to='https://github.com/SerjQazi' target='_blank' rel='noopener noreferrer'>
-            <img src={gitHubIcon} alt="Serj Qazi GitHub profile" />
+        <li className='flex justify-center align-middle w-full cursor-pointer lg:border-r-2 border-slate-700 hover:bg-slate-700 duration-700'>
+          <Link className='text-slate-600 text-3xl sm-text-4xl hover:text-yellow-500 px-1 py-5 sm:py-6 lg:px-10 hover:scale-110 duration-700 focus:text-yellow-500 focus:outline-none focus:bg-slate-700' 
+          to='https://github.com/SerjQazi' target='_blank' rel='noopener noreferrer'>
+            <TbBrandGithub/>
           </Link>
         </li>
 
-        <li className='flex justify-center align-middle w-full cursor-pointer border-r-2 border-slate-700'
-          onMouseOver={() => setTwitterIcon(twitterYellow)}
-          onMouseOut={() => setTwitterIcon(twitter)}
-        >
-          <Link className='px-10 py-2 hover:scale-110 duration-300' to='https://twitter.com/qazi_serj' target='_blank' rel='noopener noreferrer'>
-            <img src={twitterIcon} alt="Serj Qazi twitter" />
+        <li className='flex justify-center align-middle w-full cursor-pointer lg:border-r-2 border-slate-700 hover:bg-slate-700 duration-700'>
+          <Link className='text-slate-600 text-3xl sm-text-4xl hover:text-yellow-500 px-1 py-5 sm:py-6 lg:px-10 hover:scale-110 duration-700 focus:text-yellow-500 focus:outline-none focus:bg-slate-700' 
+          to='https://twitter.com/qazi_serj' target='_blank' rel='noopener noreferrer'>
+            <RxTwitterLogo/>
           </Link>
         </li>
 
-        <li className='flex justify-center align-middle w-full cursor-pointer'
-          onMouseOver={() => setPdfIcon(pdfYellow)}
-          onMouseOut={() => setPdfIcon(pdf)}
-          >
-          <Link className='px-10 py-2 hover:scale-110 duration-300' to={myresume} target='_blank' rel='noopener noreferrer'>
-            <img src={pfdIcon} alt="Serj Qazi resume pdf"/>
+        <li className='flex justify-center align-middle w-full cursor-pointer rounded-br-lg rounded-bl-lg hover:bg-slate-700 duration-700'>
+          <Link className='text-slate-600 text-3xl sm-text-4xl hover:text-yellow-500 px-1 py-5 sm:py-6 lg:px-10 hover:scale-110 duration-700 focus:text-yellow-500 focus:outline-none focus:bg-slate-700 focus:rounded-br-lg focus:rounded-bl-lg' 
+          to={resume} target='_blank' rel='noopener noreferrer'>
+            <BsFileEarmarkPdf/>
           </Link>
         </li>
 
