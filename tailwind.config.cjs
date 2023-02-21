@@ -9,7 +9,11 @@ module.exports = {
       fontFamily: {
         sans: ['Ubuntu, sans-serif'],
         cursive: ['Train One, cursive'],
-      }
+      },
+      screens: {
+        'phone': '844px',
+        // => @media (min-width: 640px) { ... }
+      },
     },
   },
   plugins: [],
