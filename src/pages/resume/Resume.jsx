@@ -1,14 +1,13 @@
 import React from 'react'
 import Navigation from '../../components/Navigation'
 import selfPortraitSlate from '../../assets/selfPortraitSlate.png'
-import logo from '../../assets/sqLogo.png'
 
-const About = () => {
+const Resume = () => {
   return (
-      <div className="rightSide grid col-span-4">
-        ABOUT ME
+      <div className="rightSide border-2 border-red-500 grid col-span-4">
+        RESUME
       </div>
   )
 }
 
-export default About
+export default Resume

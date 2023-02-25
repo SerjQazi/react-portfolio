@@ -33,7 +33,7 @@ const Home = () => {
 
         <div className=" xl:my-8 w-fit font-bold text-sm sm:text-base phone:text-xs lg:text-sm xl:text-base 2xl:text-lg hover:shadow-lg hover:shadow-yellow-500/50 hover:scale-110 duration-500 cursor-pointer">
 
-          <Link to={"./about"} className="uppercase font-sans font-bold text-slate-900 px-4 py-2 rounded-lg bg-yellow-500 hover:bg-slate-100 focus:text-yellow-500 focus:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+          <Link to={"./profile/about"} className="uppercase font-sans font-bold text-slate-900 px-4 py-2 rounded-lg bg-yellow-500 hover:bg-slate-100 focus:text-yellow-500 focus:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-yellow-500">
             More About Me
           </Link>
         </div>
@@ -51,4 +51,4 @@ const Home = () => {
     </div>
   )
 }
-export default Home
+export default Home;
