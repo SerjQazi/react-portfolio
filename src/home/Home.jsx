@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import React from 'react'
-import selfPortrait from '../../assets/selfPortrait.png'
-import selfPortraitSlate from '../../assets/selfPortraitSlate.png'
-import selfPortraitYellow from '../../assets/selfPortraitYellow.png'
+import selfPortrait from '../assets/selfPortrait.png'
+import selfPortraitYellow from '../assets/selfPortraitYellow.png'
+import selfPortraitSlate from '../assets/selfPortraitSlate.png'
 
-import Social from '../../components/Social';
+import Social from '../components/Social';
 
 const Home = () => {
   return (

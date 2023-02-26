@@ -1,13 +1,15 @@
 import React from 'react'
-import Navigation from '../../components/Navigation'
+import Navigation from '../Navigation'
 import selfPortraitSlate from '../../assets/selfPortraitSlate.png'
 import logo from '../../assets/sqLogo.png'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
-import About from '../about/About'
-import Resume from '../resume/Resume'
+import About from '../../pages/about/About'
+import Resume from '../../pages/resume/Resume'
+import Portfolio from '../../pages/portfolio/Portfolio'
+import Contacts from '../../pages/contacts/Contacts'
 
 const Profile = () => {
   return (
@@ -23,15 +25,15 @@ const Profile = () => {
         </div>
       </div>
 
-
-
-        <div className="rightSide grid col-span-4">
+      <div className="rightSide grid col-span-4">
         <Routes>
           <Route path='about' element={<About/>} />
+          <Route path='resume' element={<Resume/>} />
+          <Route path='portfolio' element={<Portfolio/>} />
+          <Route path='contacts' element={<Contacts/>} />
         </Routes>
-        </div>
-
-
+      </div>
+      
     </div>
   )
 }

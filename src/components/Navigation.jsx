@@ -25,12 +25,12 @@ const Navigation = () => {
                     </NavLink>
                 </li>
                 <li className='p-4 mb-2 border-b border-slate-900 border-opacity-25'>
-                    <NavLink>
+                    <NavLink to={"/profile/portfolio"} className={({ isActive}) => isActive ? activeLink:normalLink}>
                         Portfolio
                     </NavLink>
                 </li>
                 <li className='p-4 mb-2'>
-                    <NavLink>
+                    <NavLink to={"/profile/contacts"} className={({ isActive}) => isActive ? activeLink:normalLink}>
                         Contact
                     </NavLink>
                 </li>
