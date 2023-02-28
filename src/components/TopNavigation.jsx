@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+const TopNavigation = () => {
 
     const activeLink = 'text-white'
     const normalLink = ''
 
     return (
         <div>
-            <ul className='uppercase font-sans font-bold text-center'>
+            <ul className='uppercase font-sans font-bold text-center tracking-[0.35em]'>
                 <li className='p-4 mb-2 border-b border-slate-900 border-opacity-25'>
                     <NavLink to='/' className={({ isActive}) => isActive ? activeLink:normalLink}>
                         Home
@@ -40,4 +40,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation
+export default TopNavigation

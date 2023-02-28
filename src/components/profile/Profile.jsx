@@ -1,10 +1,8 @@
 import React from 'react'
-import Navigation from '../Navigation'
-import selfPortraitSlate from '../../assets/selfPortraitSlate.png'
-import logo from '../../assets/sqLogo.png'
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
+import SideNavigation from '../SideNavigation'
+import TopNavigation from '../TopNavigation'
 
 import About from '../../pages/about/About'
 import Resume from '../../pages/resume/Resume'
@@ -13,19 +11,13 @@ import Contacts from '../../pages/contacts/Contacts'
 
 const Profile = () => {
   return (
-    <div className='grid grid-cols-5 gap-0'>
+    <div className='grid grid-cols-5 border-2 border-green-500'>
 
-      <div className="leftSide col-span-1">
-        <div className="logoContainer">
-          <img className="img" src={selfPortraitSlate} alt="Self Portrait"/>
-        </div>
-
-        <div className="navContainer h-[36.4vh] bg-yellow-500 flex justify-center items-center">
-          <Navigation />
-        </div>
+      <div className="col-span-1 border-2 border-red-500">
+        <SideNavigation />
       </div>
 
-      <div className="rightSide grid col-span-4">
+      <div className="grid col-span-4 border-2 border-blue-500">
         <Routes>
           <Route path='about' element={<About/>} />
           <Route path='resume' element={<Resume/>} />

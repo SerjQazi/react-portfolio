@@ -5,11 +5,11 @@ const Skills = () => {
     return (
         <>
             <div className='flex justify-center items-center border-2 border-dashed border-slate-400 border-opacity-50 mx-36 my-4'>
-                <h3 className='uppercase text-yellow-500 text-2xl py-3'>Skills</h3>
+                <h3 className='uppercase text-yellow-500 text-2xl font-bold tracking-[0.35em] py-3'>Skills</h3>
             </div>
 
             <div className="text-yellow-500 text-4xl">
-                <ul className='grid grid-cols-6'>
+                <ul className='grid grid-cols-6 tracking-wider'>
                     <li className='mb-4 flex flex-col justify-center items-center'>
                     <FaReact />
                     <p className='text-xs text-center font-thin mt-3 text-slate-100'>React</p>

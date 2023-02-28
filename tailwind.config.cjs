@@ -12,6 +12,7 @@ module.exports = {
       },
       screens: {
         'phone': '844px',
+        '3xl': '1550px',
         // => @media (min-width: 640px) { ... }
       },
     },
