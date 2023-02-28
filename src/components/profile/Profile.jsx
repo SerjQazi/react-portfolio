@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import SideNavigation from '../SideNavigation'
@@ -10,14 +10,34 @@ import Portfolio from '../../pages/portfolio/Portfolio'
 import Contacts from '../../pages/contacts/Contacts'
 
 const Profile = () => {
-  return (
-    <div className='grid grid-cols-5 border-2 border-green-500'>
+  
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 844;
 
-      <div className="col-span-1 border-2 border-red-500">
-        <SideNavigation />
+  useEffect(() => {
+  const handleResizeWindow = () => setWidth(window.innerWidth);
+    // subscribe to window resize event "onComponentDidMount"
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      // unsubscribe "onComponentDestroy"
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
+
+  return (
+    <div className='phone:grid grid-cols-5'>
+
+      <div className="phone:col-span-1">
+        {
+          width < breakpoint ?
+          <TopNavigation />
+          :
+          <SideNavigation />
+        }
       </div>
 
-      <div className="grid col-span-4 border-2 border-blue-500">
+      <div className="phone:grid col-span-4">
         <Routes>
           <Route path='about' element={<About/>} />
           <Route path='resume' element={<Resume/>} />

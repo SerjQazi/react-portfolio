@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
+import { FaHome, BsFillPersonFill, VscFilePdf, CgCodeSlash, TiContacts } from 'react-icons/all'
 
 const TopNavigation = () => {
 
@@ -7,31 +9,31 @@ const TopNavigation = () => {
     const normalLink = ''
 
     return (
-        <div>
-            <ul className='uppercase font-sans font-bold text-center tracking-[0.35em]'>
-                <li className='p-4 mb-2 border-b border-slate-900 border-opacity-25'>
+        <div className='bg-yellow-500'>
+            <ul className='uppercase font-sans font-medium text-3xl text-center text-slate-700 tracking-[0.35em] flex justify-center items-center'>
+                <li className='py-2 px-5 border-r border-slate-900 border-opacity-25'>
                     <NavLink to='/' className={({ isActive}) => isActive ? activeLink:normalLink}>
-                        Home
+                        <FaHome />
                     </NavLink>
                 </li>
-                <li className='p-4 mb-2 border-b border-slate-900 border-opacity-25'>
+                <li className='py-2 px-5 border-r border-slate-900 border-opacity-25'>
                     <NavLink to={"/profile/about"} className={({ isActive}) => isActive ? activeLink:normalLink}>
-                        About Me
+                        <BsFillPersonFill />
                     </NavLink>
                 </li>
-                <li className='p-4 mb-2 border-b border-slate-900 border-opacity-25'>
+                <li className='py-2 px-5 border-r border-slate-900 border-opacity-25'>
                     <NavLink to={"/profile/resume"} className={({ isActive}) => isActive ? activeLink:normalLink}>
-                        Resume
+                        <VscFilePdf />
                     </NavLink>
                 </li>
-                <li className='p-4 mb-2 border-b border-slate-900 border-opacity-25'>
+                <li className='py-2 px-5 border-r border-slate-900 border-opacity-25'>
                     <NavLink to={"/profile/portfolio"} className={({ isActive}) => isActive ? activeLink:normalLink}>
-                        Portfolio
+                        <CgCodeSlash />
                     </NavLink>
                 </li>
-                <li className='p-4 mb-2'>
+                <li className='py-2 px-5'>
                     <NavLink to={"/profile/contacts"} className={({ isActive}) => isActive ? activeLink:normalLink}>
-                        Contact
+                        <TiContacts />
                     </NavLink>
                 </li>
                 
