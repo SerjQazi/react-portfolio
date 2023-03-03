@@ -33,7 +33,7 @@ const About = () => {
             </div>
 
             <div className='text-slate-700 font-thin'>
-              <div className="heaverContainer text-lg lg:text-2xl mb-2 lg:mb-6 font-light tracking-wide leading-5 phone:flex justify-start items-center">
+              <div className="text-lg lg:text-2xl mb-2 lg:mb-6 font-light tracking-wide leading-5 phone:flex justify-start items-center">
 
                 <h2 className='mb-1 phone:mb-0 phone:text-base'>
                   I'm <span className='font-black'>Serj Qazi,</span> 
@@ -92,7 +92,7 @@ const About = () => {
                   <h3 className='font-bold text-sm phone:text-[0.7rem] lg:text-base mb-1'>Development</h3>
                   <p className='text-xs lg:text-sm phone:hidden lg:block'>
                     Manage / build new content for existing web pages and applications using JavaScript and React.
-                    </p>
+                  </p>
                 </div>
               </div>
 
