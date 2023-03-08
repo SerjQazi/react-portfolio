@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import { GoMailRead, FaLinkedin } from 'react-icons/all'
+import { GoMailRead, FaLinkedin, FiPhone, IoMdPaperPlane } from 'react-icons/all'
 
 const Contact = () => {
 
@@ -39,7 +39,7 @@ const Contact = () => {
               </h1>
             </div>
             <div className='text-slate-700 font-thin'>
-              <div className="text-2xl lg:text-2xl mb-2 lg:mb-6 font-light tracking-wide leading-5 flex justify-start items-center">
+              <div className="text-2xl lg:text-2xl mt-4 phone:mt-0 mb-2 lg:mb-6 font-light tracking-wide leading-5 flex justify-start items-center">
 
                 <h2 className='mb-1 phone:mb-0'>
                   Feel <span className='font-black'>free</span> 
@@ -56,34 +56,69 @@ const Contact = () => {
 
           <div className='phone:grid grid-cols-2 my-4 text-slate-700'>
 
-            <div className="icon text-6xl phone:text-7xl flex justify-center phone:justify-start items-center">
+            <div className="icon text-5xl phone:text-7xl ml-10 phone:ml-0 flex phone:justify-start items-center">
               <GoMailRead />
 
-              <div className="text-base ml-6 py-8 cursor-pointer hover:scale-110 duration-300 ease-in-out">
+              <div className="text-base ml-6 py-4 cursor-pointer hover:scale-110 duration-300 ease-in-out">
                 <Mailto email="sirajum.qazi@gmail.com" subject="Development Opportunity" body="Hi Serj," target="_blank">
                   sirajum.qazi@gmail.com
                 </Mailto>
               </div>
 
             </div>
-            
-            <div className="icon text-6xl phone:text-7xl flex justify-center phone:justify-start items-center">
-              <FaLinkedin />
-              <div className='text-base ml-6 py-8 cursor-pointer hover:scale-110 duration-300 ease-in-out'>
+
+            <div className="icon text-5xl phone:text-7xl ml-10 phone:ml-0 flex phone:justify-start items-center">
+              <FiPhone />
+              <div className='text-base ml-6 py-4 cursor-pointer hover:scale-110 duration-300 ease-in-out'>
                 <Link to='https://www.linkedin.com/in/serjqazi/' target="_blank">
-                  linkedin.com/in/serjqazi/
+                  +1 226-501-5420
+                </Link>
+              </div>
+            </div>
+            
+            <div className="icon text-5xl phone:text-7xl ml-10 phone:ml-0 flex phone:justify-start items-center">
+              <FaLinkedin />
+              <div className='text-base ml-6 py-4 cursor-pointer hover:scale-110 duration-300 ease-in-out'>
+                <Link to='https://www.linkedin.com/in/serjqazi/' target="_blank">
+                  linkedin.com/serjqazi
                 </Link>
               </div>
             </div>
           </div>
 
-          <div className='p-4 border-2 border-red-500'>
-            <form action="">
-              <input className='border-2 border-blue-500' type="text" />
-              <input className='border-2 border-blue-500' type="text" />
-              <textarea className='border-2 border-blue-500' name="" id="" cols="30" rows="10"></textarea>
+          <div className='mb-4 text-slate-700'>
 
-              <button>Send</button>
+            <form className='flex flex-col justify-center items-center'>
+              <label htmlFor="name" className='sr-only'>Enter your name</label>
+                <input type='text' 
+                id='name' 
+                name='name' 
+                placeholder='Name' 
+                className='w-full px-3 py-2 text-base bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500'
+                />
+
+              <label htmlFor="email" className='sr-only'>Enter your email address</label>
+                <input 
+                type='email' 
+                id='email' 
+                name='email' 
+                placeholder='Email address' 
+                className='mt-2 w-full px-3 py-2 text-base bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 invalid:border-red-500 invalid:border-2'
+                />
+
+              <label htmlFor="message" className='sr-only'>Enter your message</label>
+                <textarea 
+                type='text' 
+                id='message' 
+                name='message' 
+                placeholder='Message' 
+                cols="30" 
+                rows="8"
+                className='mt-2 w-full px-3 py-2 text-base bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-none'
+                />
+
+                
+              <button className='px-5 py-1 mt-4 bg-yellow-500 rounded-md uppercase font-bold tracking-widest flex justify-center items-center text-base' type='submit'>Send <IoMdPaperPlane className='ml-1 text-base'/> </button>
             </form>
 
           </div>
