@@ -7,7 +7,7 @@ import TopNavigation from '../TopNavigation'
 import About from '../../pages/about/About'
 import Resume from '../../pages/resume/Resume'
 import Portfolio from '../../pages/portfolio/Portfolio'
-import Contacts from '../../pages/contacts/Contacts'
+import Contacts from '../../pages/contacts/Contact'
 
 const Profile = () => {
   

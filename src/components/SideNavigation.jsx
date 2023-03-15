@@ -14,7 +14,7 @@ const SideNavigation = () => {
                 <img className="img" src={selfPortraitSlate} alt="Self Portrait"/>
             </div>
 
-            <div className="navContainer phone:h-[50.4vh] 2xl:h-[44.4vh] bg-yellow-500 flex justify-center items-center">
+            <div className="navContainer phone:h-[52.5vh] 2xl:h-[44.4vh] bg-yellow-500 flex justify-center items-center">
                 <ul className='uppercase font-sans font-bold text-[0.5rem] text-center tracking-[0.35em]'>
                     <li className='p-4 phone:p-2 mb-2 phone:my-2 border-b border-slate-900 border-opacity-25'>
                         <NavLink to='/' className={({ isActive}) => isActive ? activeLink:normalLink}>
