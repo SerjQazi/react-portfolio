@@ -8,7 +8,7 @@ const Resume = () => {
       <div className='border border-dashed border-slate-400 hidden sm:block phone:hidden my-6'>
       </div>
       
-      <h3 className='uppercase font-bold text-slate-700 text-base phone:text-base sm:text-2xl lg:text-2xl xl:text-3xl lg:leading-6 mb-2 phone:mb-1 mt-4 phone:mt-0 sm:mt-0 lg:mt-2'>
+      <h3 className='uppercase font-bold text-slate-700 text-base phone:text-base sm:text-2xl lg:text-2xl xl:text-3xl lg:leading-6 mb-2 phone:mb-1 mt-4 phone:mt-0 sm:mt-0 lg:mt-2 2xl:mt-8'>
         Education
       </h3>
 

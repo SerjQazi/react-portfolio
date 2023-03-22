@@ -19,7 +19,7 @@ const Contact = () => {
   }, []);
 
   const mobile = 'verticalText uppercase text-center font-black tracking-wide text-slate-700 text-lg py-2 px-1'
-  const desktop = 'uppercase text-center font-black tracking-widest text-slate-700 phone:text-xl sm:text-2xl lg:text-6xl xl:text-8xl 2xl:text-8xl py-6 phone:py-2'
+  const desktop = 'uppercase text-center font-black tracking-widest text-slate-700 phone:text-xl sm:text-2xl lg:text-6xl xl:text-8xl 2xl:text-9xl py-6 phone:py-2'
 
   function Mailto({ email, subject, body, ...props }) {
     return (
@@ -31,8 +31,8 @@ const Contact = () => {
 
   return (
       <div className='flex justify-center bg-slate-100 phone:ml-2'>
-        <div className="wrapper w-full md:w-11/12 lg:w-full px-2 md:px-0 lg:px-4 h-[90.01vh] phone:h-auto sm:px-4 phone:px-0 phone:pr-2">
-        <div className='my-4 phone:my-2 md:mt-6 md:mb-4 lg:my-5 xl:my-7'>
+        <div className="wrapper w-full md:w-11/12 lg:w-full px-2 md:px-0 lg:px-4 2xl:px-8 h-[90.01vh] phone:h-auto sm:px-4 phone:px-0 phone:pr-2">
+        <div className='my-4 phone:my-2 md:mt-6 md:mb-4 lg:my-5 xl:my-7 2xl:my-10'>
           <div className='flex flex-row-reverse justify-between sm:flex-col mb-2 sm:mb-4 lg:mb-6'>
             <div className='flex justify-center items-center border-2 border-dashed border-slate-700 border-opacity-50 ml-2 sm:mx-28 sm:mb-4 lg:mb-8'>
               <h1 className={width < breakpoint ? mobile : desktop}>
@@ -49,7 +49,7 @@ const Contact = () => {
                   to contact me!
                 </h2>
               </div>
-              <p className='text-base phone:text-xs sm:text-lg lg:text-base tracking-wide ml-2 pr-1 phone:ml-3'>
+              <p className='text-base phone:text-xs sm:text-lg lg:text-base 2xl:text-lg tracking-wide ml-2 pr-1 phone:ml-3'>
                 It would be my pleasure to discuss any Frontend Development opportunities, I look forward to hearing from you. Thank you for your consideration. 
               </p>
             </div>

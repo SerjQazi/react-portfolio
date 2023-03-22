@@ -10,7 +10,7 @@ const Skills = () => {
                 </h3>
             </div>
 
-            <div className="text-yellow-500 text-xl phone:text-sm sm:text-4xl lg:text-sm xl:text-2xl 2xl:text-5xl">
+            <div className="text-yellow-500 text-xl phone:text-sm sm:text-4xl lg:text-sm xl:text-2xl 2xl:text-4xl">
                 <ul className='grid grid-cols-4 phone:grid-cols-6 lg:grid-cols-4 tracking-wider'>
                     <li className='mb-3 phone:mb-2 lg:mb-1 flex flex-col justify-center items-center'>
                         <FaReact />

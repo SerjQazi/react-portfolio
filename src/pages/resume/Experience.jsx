@@ -34,7 +34,7 @@ const Resume = () => {
                   <li className='ml-6 phone:ml-4 list-disc mb-1 phone:mb-0 phone:leading-3 xl:leading-5 lg:mb-2 xl:mb-1'>
                     <p>Worked in an agile environment using Kanban methodologies</p>
                   </li>
-                  <li className='ml-0 mt-4 phone:mt-1 xl:mt-4'>
+                  <li className='ml-0 mt-4 phone:mt-1 xl:mt-4 2xl:mt-6'>
                     <p className='font-bold text-sm phone:text-[0.6rem] lg:text-xs xl:text-sm leading-5'>Tech Stack :</p>
                       <p className='ml-2 flex justify-start items-center text-[0.7rem] phone:text-[0.5rem] sm:text-sm lg:text-[0.7rem] xl:text-sm leading-4 lg:leading-5 phone:leading-4'>
                         &#x2022; React &#x2022; JavaScript &#x2022; HTML5 &#x2022; Tailwind &#x2022; RESTful API &#x2022; Bitbucket 
@@ -67,7 +67,7 @@ const Resume = () => {
                     <li className=' ml-6 phone:ml-4 list-disc mb-1 phone:mb-0 phone:leading-3 xl:leading-5 lg:mb-2'>
                       <p>Created API schemas for new APIs</p>
                     </li>
-                    <li className='ml-0 mt-4 phone:mt-1 xl:mt-4'>
+                    <li className='ml-0 mt-4 phone:mt-1 xl:mt-4 2xl:mt-6'>
                       <p className='font-bold text-sm phone:text-[0.6rem] lg:text-xs xl:text-sm leading-5'>Tech Stack :</p>
                         <p className='flex justify-start items-center text-[0.7rem] phone:text-[0.5rem] sm:text-sm lg:text-[0.7rem] xl:text-sm leading-4 phone:leading-4 lg:leading-5'>
                           &#x2022; React &#x2022; JavaScript &#x2022; HTML5 &#x2022; CSS3 &#x2022; SASS &#x2022; Material UI &#x2022; Ant Design 

@@ -83,7 +83,7 @@ const ContactBox = () => {
             
           }
 
-          <button className='px-5 py-1 sm:px-8 sm:py-3 phone:px-5 phone:py-1 lg:py-2 lg:px-6 mt-4 phone:mt-2 sm:mt-8 lg:mt-4 bg-yellow-500 rounded-md uppercase font-bold tracking-widest flex justify-center items-center text-base phone:text-sm sm:text-2xl xl:text-lg' type='submit'>Send<IoMdPaperPlane className='ml-1 sm:ml-3 phone:ml-1 text-base sm:text-2xl'/> </button>
+          <button className='px-5 py-1 sm:px-8 sm:py-3 phone:px-5 phone:py-1 lg:py-2 lg:px-6 2xl:py-3 2xl:px-10 mt-4 phone:mt-2 sm:mt-8 lg:mt-4 2xl:mt-5 bg-yellow-500 rounded-md uppercase font-bold tracking-widest flex justify-center items-center text-base phone:text-sm sm:text-2xl xl:text-lg 2xl:text-xl' type='submit'>Send<IoMdPaperPlane className='ml-1 sm:ml-3 phone:ml-1 text-base sm:text-2xl'/> </button>
         </form>
 
       </div>
