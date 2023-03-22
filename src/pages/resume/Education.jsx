@@ -1,81 +1,22 @@
 import {React, useState, useEffect} from 'react'
-
+import { FaReact, SiJavascript, AiFillHtml5 } from 'react-icons/all'
 
 const Resume = () => {
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 844;
-
-  useEffect(() => {
-  const handleResizeWindow = () => setWidth(window.innerWidth);
-    // subscribe to window resize event "onComponentDidMount"
-    window.addEventListener("resize", handleResizeWindow);
-    return () => {
-      // unsubscribe "onComponentDestroy"
-      window.removeEventListener("resize", handleResizeWindow);
-    };
-  }, []);
-
-  const mobile = 'verticalText uppercase text-center font-black tracking-wide text-slate-700 text-lg py-2 px-1'
-  const desktop = 'uppercase text-center font-black tracking-widest text-slate-700 phone:text-xl 2xl:text-8xl py-6 phone:py-2'
-
   return (
     <div className=''>
-      <h3 className='uppercase font-bold text-slate-700 text-base mb-4 phone:mb-1'>
+      <div className='border border-dashed border-slate-400 hidden sm:block phone:hidden my-6'>
+      </div>
+      
+      <h3 className='uppercase font-bold text-slate-700 text-base phone:text-base sm:text-2xl lg:text-2xl xl:text-3xl lg:leading-6 mb-2 phone:mb-1 mt-4 phone:mt-0 sm:mt-0 lg:mt-2 2xl:mt-8'>
         Education
       </h3>
 
-      <div className='phone:grid grid-cols-3'>
-        <div className="text-slate-700">
-          <h4 className='text-sm phone:text-[0.5rem] font-bold uppercase mb-2 phone:mb-1 phone:leading-3'>Frontend Development</h4>
-          <p className='font-thin text-sm phone:text-xs mb-2 phone:mb-0.5'>Juno College Of Technology</p>
-          <ul className='ml-6 text-xs phone:text-[0.5rem]'>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>Frontend Web Development</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>Intro to JavaScript</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>Intro to HTML5 & CSS3</p>
-            </li>
-          </ul>
-        </div>
+      <div className=''>
+        <div className="text-slate-700 phone:flex phone:justify-start phone:items-center">
+          <p className='font-thin text-sm phone:text-xs sm:text-base lg:text-base xl:text-lg mb-2 phone:mb-0.5 phone:leading-[0.5rem] phone:mr-4 lg:mr-4'>Juno College Of Technology</p>
 
-        <div className='hidden phone:block'>
-          <h4 className='text-sm phone:text-[0.5rem] font-bold uppercase mb-2 phone:mb-1 phone:leading-3'>Tech Stack</h4>
-          <ul className='ml-6 text-xs phone:text-[0.5rem]'>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>React (Hooks & Classes)</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>JavaScript ES6+</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>HTML5, CSS3, SASS</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>Material UI & Ant Design</p>
-            </li>
-          </ul>
-        </div>
-
-        <div className='hidden phone:block'>
-          
-          <ul className='ml-6 text-xs phone:text-[0.5rem] mt-4'>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>RESTful APIs & Firebase</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>BitBucket & GitHub collaboration</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>Figma prototypes - UI/UX</p>
-            </li>
-            <li className='list-disc mb-1 phone:mb-0 phone:leading-3'>
-              <p>Photoshop & Illustrator</p>
-            </li>
-          </ul>
+          <p className='ml-2 text-xs phone:text-[0.5rem] sm:text-sm lg:text-xs xl:text-sm flex justify-start items-center phone:mt-0 lg:mt-1'><FaReact className='mr-1 xl:text-lg xl:mr-2'/>React Development |<SiJavascript className='mx-1 xl:ml-3 xl:text-lg xl:mr-2'/> JavaScript |<AiFillHtml5 className='mx-1 xl:ml-3 xl:text-lg xl:mr-2'/> HTML5 & CSS3</p>
         </div>
       </div>
     
