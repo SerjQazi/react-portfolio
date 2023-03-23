@@ -4,8 +4,8 @@ import { FaReact, SiTailwindcss, SiJavascript, SiJquery, SiHtml5, SiCss3, FaSass
 const Skills = () => {
     return (
         <>
-            <div className='flex justify-center items-center border-2 border-dashed border-slate-400 border-opacity-50 mt-4 mb-5 sm:my-6 phone:my-4 mx-20 2xl:mx-36'>
-                <h3 className='uppercase text-yellow-500 text-lg phone:text-base xl:text-2xl 2xl:text-2xl font-bold tracking-widest phone:tracking-widest sm:tracking-[0.35em] xl:tracking-[0.35em] py-1 phone:py-0.5 sm:py-2 2xl:py-3'>
+            <div className='flex justify-center items-center border-2 border-dashed border-slate-400 border-opacity-50 mt-4 mb-5 sm:my-6 phone:my-4 mx-20 xl:mx-32 2xl:mx-36'>
+                <h3 className='uppercase text-yellow-500 text-lg phone:text-base xl:text-2xl 2xl:text-2xl font-bold tracking-widest phone:tracking-widest sm:tracking-[0.35em] xl:tracking-[0.35em] py-1 phone:py-0.5 sm:py-2 xl:py-1 2xl:py-2'>
                     Skills
                 </h3>
             </div>

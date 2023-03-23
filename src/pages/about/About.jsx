@@ -19,28 +19,28 @@ const About = () => {
   }, []);
 
   const mobile = 'verticalText uppercase text-center font-black tracking-wide text-slate-700 text-lg py-2 px-1'
-  const desktop = 'uppercase text-center font-black tracking-widest text-slate-700 phone:text-xl sm:text-2xl lg:text-6xl xl:text-8xl 2xl:text-8xl py-6 phone:py-2'
+  const desktop = 'uppercase text-center font-black tracking-widest text-slate-700 phone:text-xl sm:text-2xl lg:text-6xl xl:text-5xl 2xl:text-6xl py-6 phone:py-2 xl:py-4'
 
   return (
-      <div className='flex justify-center bg-slate-100 phone:ml-2'>
-        <div className="wrapper w-full md:w-11/12 lg:w-full px-2 md:px-0 lg:px-4 2xl:px-8   phone:h-auto sm:px-4 phone:px-0 phone:pr-2">
+      <div className='flex justify-center items-center bg-slate-100 phone:ml-2 lg:ml-0'>
+        <div className="wrapper w-full md:w-11/12 lg:w-full px-2 md:px-0 lg:px-4 2xl:px-8 phone:h-auto sm:px-4 phone:px-0 phone:pr-2">
           
-          <div className='my-4 phone:my-2 md:mt-6 md:mb-4 lg:my-5 xl:my-7'>
+          <div className='my-4 phone:my-2 xl:my-4 md:mt-6 md:mb-4'>
 
-            <div className='flex flex-row-reverse justify-between sm:flex-col mb-4 phone:mb-4 sm:mb-4 xl:mb-8'>
-              <div className='flex justify-center items-center border-2 border-dashed border-slate-700 border-opacity-50 ml-2 sm:mx-28 sm:mb-4 lg:mb-4 xl:mb-8'>
+            <div className='flex flex-row-reverse justify-between sm:flex-col mb-4 phone:mb-4 sm:mb-4'>
+              <div className='flex justify-center items-center border-2 border-dashed border-slate-700 border-opacity-50 ml-2 sm:mx-28 xl:mx-48 sm:mb-4'>
                 <h1 className={width < breakpoint ? mobile : desktop}>
                   About Me
                 </h1>
               </div>
 
               <div className='text-slate-700 font-thin'>
-                <div className="mb-0 phone:mb-2 sm:mb-4 lg:mb-4 font-light tracking-wide leading-5 sm:flex justify-start items-center">
+                <div className="mb-0 phone:mb-2 sm:mb-4 lg:mb-4 xl:mb-2 2xl:mb-4 font-light tracking-wide leading-5 sm:flex justify-start items-center">
 
-                  <h2 className='mb-1 phone:mb-0 phone:text-base xl:text-2xl'>
+                  <h2 className='mb-1 phone:mb-0 phone:text-base xl:text-xl'>
                     I'm <span className='font-black'>Serj Qazi,</span> 
                   </h2>
-                  <h2 className='text-xs phone:text-base sm:text-xl xl:text-2xl font-thin underline underline-offset-4 sm:no-underline phone:ml-1 sm:ml-3 xl:ml-4'>
+                  <h2 className='text-xs phone:text-base sm:text-xl xl:text-xl font-thin underline underline-offset-4 sm:no-underline phone:ml-1 sm:ml-3 xl:ml-3'>
                     Frontend Developer / Graphic Designer
                   </h2>
                 </div>
@@ -63,7 +63,7 @@ const About = () => {
                       </li>
                     </ul>
                   </>
-                : <p className='text-xs phone:text-[0.5rem] sm:text-sm lg:text-xs xl:text-base  tracking-wide phone:tracking-wide sm:tracking-widest ml-2 sm:ml-2 phone:leading-[1rem]'>
+                : <p className='text-xs phone:text-[0.5rem] sm:text-sm lg:text-xs xl:text-sm 2xl:text-base  tracking-wide phone:tracking-wide sm:tracking-widest xl:tracking-normal ml-2 sm:ml-2 xl:mx-4 phone:leading-[1rem] xl:leading-5 2xl:leading-6'>
                   A Frontend Developer with years of experience in building accessible and responsive web pages using <span className='font-bold'>React.</span> I have worked with <span className='font-bold'>RESTful APIs, Git,</span> and <span className='font-bold'>Figma,</span> and have experience in agile methodologies such as <span className='font-bold'>Kanban, Jira,</span> and <span className='font-bold'>Confluence.</span> Additionally, I have experience with <span className='font-bold'>Material-UI, Ant Design, Tailwind,</span> and <span className='font-bold'>Firebase,</span> and have worked on projects in small and large team environments.
                 </p>
                 }

@@ -47,13 +47,9 @@ const Home = () => {
           </div>
         </div>
         
-
         <div className='absolute inset-x-px lg:bottom-[-78px] 2xl:bottom-[-115px] socialContainer flex justify-center items-center'>
           <Social/>
         </div>
-        {/* <div className="socialContainer  inset-y-1.5 right-2 sm:right-3 phone:inset-x-0 phone:top-[19.2rem] lg:top-[25rem] xl:top-[32.5rem] 2xl:top-[38rem] flex flex-col phone:flex-row justify-center align-middle">
-
-        </div> */}
 
       </div>
 
@@ -63,4 +59,5 @@ const Home = () => {
     </div>
   )
 }
+
 export default Home;
