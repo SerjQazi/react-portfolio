@@ -77,7 +77,7 @@ const About = () => {
                 <Skills />              
               </div>
 
-              <div className="text-slate-700 font-thin col-span-1 lg:col-span-2 phone:pl-2 lg:pl-8">
+              <div className="text-slate-700 font-thin col-span-1 lg:col-span-2 phone:pl-2 lg:pl-8 xl:pr-4 xl:my-4 2xl:my-6">
                 <h3 className='text-lg sm:text-base lg:text-2xl mb-2 phone:mb-3 xl:mb-4 font-bold'>
                   What I Do?
                 </h3>
@@ -96,7 +96,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="mb-4 ml-2 phone:ml-0 flex phone:items-center">
+                <div className="mb-4 xl:mb-0 ml-2 phone:ml-0 flex phone:items-center">
                   
                   <div className="image w-20 phone:w-10  lg:w-1/3 xl:w-1/3 flex justify-center items-center">
                     <img src={figmaIcon} alt="" />
