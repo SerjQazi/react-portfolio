@@ -41,7 +41,7 @@ const Home = () => {
           <div className="uppercase font-sans font-bold text-slate-700 w-fit text-sm sm:text-base phone:text-xs lg:text-sm xl:text-base 2xl:text-lg hover:shadow-lg hover:shadow-yellow-500/50 hover:scale-105 duration-500 cursor-pointer">
 
             <Link to={"./profile/about"} className="flex justify-center items-center px-4 py-2 lg:px-6 lg:py-2 2xl:px-6 2xl:py-4 bg-yellow-500 rounded-xl">
-              More About Me <GoChevronRight className='text-3xl ml-2'/> 
+              More About Me test <GoChevronRight className='text-3xl ml-2'/> 
             </Link>
 
           </div>
