@@ -45,7 +45,7 @@ const Home = () => {
 
       </div>
 
-      <div className="w-full">
+      <div className="w-full sm:w-10/12 xl:w-8/12 3xl:w-full">
           <img className="img" src={selfPortraitSlate} alt="Self Portrait"/>
       </div>
     </div>
