@@ -7,9 +7,9 @@ import selfPortraitSlate from '../assets/selfPortraitSlate.png';
 
 const Home = () => {
   return (
-    <div className='mainCardContainer flex justify-center items-start flex-wrap phone:flex-nowrap bg-slate-100'>
+    <div className='mainCardContainer flex justify-center items-center flex-wrap phone:flex-nowrap bg-slate-100'>
       
-      <div className="relative leftSideContainer w-full lg:w-3/4">
+      <div className="leftSideContainer flex w-full lg:w-3/4">
         
         <div className="textContainer lg:px-14">
           
@@ -41,19 +41,19 @@ const Home = () => {
           <div className="uppercase font-sans font-bold text-slate-700 w-fit text-sm sm:text-base phone:text-xs lg:text-sm xl:text-base 2xl:text-lg hover:shadow-lg hover:shadow-yellow-500/50 hover:scale-105 duration-500 cursor-pointer">
 
             <Link to={"./profile/about"} className="flex justify-center items-center px-4 py-2 lg:px-6 lg:py-2 2xl:px-6 2xl:py-4 bg-yellow-500 rounded-xl">
-              More About Me test <GoChevronRight className='text-3xl ml-2'/> 
+              More About Me<GoChevronRight className='text-3xl ml-2'/> 
             </Link>
 
           </div>
         </div>
         
-        <div className='absolute inset-x-px lg:bottom-[-78px] 2xl:bottom-[-115px] socialContainer flex justify-center items-center'>
+        <div className='socialContainer flex justify-center items-center'>
           <Social/>
         </div>
 
       </div>
 
-      <div className="w-full sm:w-10/12 xl:w-8/12 3xl:w-full">
+      <div className="w-full lg:w-8/12 xl:w-8/12">
           <img className="img" src={selfPortraitSlate} alt="Self Portrait"/>
       </div>
     </div>

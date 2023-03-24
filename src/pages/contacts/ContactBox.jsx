@@ -8,6 +8,7 @@ const ContactBox = () => {
   const breakpoint = 640;
   const xlBreakpoint = 1280;
   const xxlBreakpoint = 1536;
+  const xxxlBreakpoint = 1550;
 
   useEffect(() => {
   const handleResizeWindow = () => setWidth(window.innerWidth);
@@ -54,7 +55,7 @@ const ContactBox = () => {
               className='mt-2 w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 text-base xl:text-sm 2xl:text-lg bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-none'
               />
             </>
-            : width == xlBreakpoint || width == xxlBreakpoint ?
+            : width == xlBreakpoint || width == xxlBreakpoint || width == xxxlBreakpoint ?
             <>
               <label htmlFor="message" className='sr-only'>enter your message</label>
               <textarea 
