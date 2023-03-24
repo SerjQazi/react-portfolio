@@ -22,7 +22,7 @@ const Resume = () => {
   const desktop = 'uppercase text-center font-black tracking-widest text-slate-700 phone:text-xl sm:text-2xl lg:text-6xl xl:text-5xl 2xl:text-6xl py-6 phone:py-2'
 
   return (
-      <div className='flex justify-center items-center bg-slate-100 phone:ml-2'>
+      <div className='flex justify-center items-center bg-slate-100 phone:ml-2 lg:ml-0'>
         <div className="wrapper w-full md:w-11/12 lg:w-full px-2 md:px-0 lg:px-4 2xl:px-8 phone:h-auto sm:px-4 phone:px-0 phone:pr-2">
 
           <div className='flex flex-row-reverse justify-between sm:flex-col my-4 phone:my-2 xl:my-4 md:mt-6 md:mb-4'>
