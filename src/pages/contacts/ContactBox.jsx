@@ -29,7 +29,7 @@ const ContactBox = () => {
             id='name' 
             name='name' 
             placeholder='name' 
-            className='w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 mb-0 phone:mb-0 sm:mb-2 text-base phone:text-xs sm:text-xl lg:text-[1rem] xl:text-sm 2xl:text-lg bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500'
+            className='w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 mb-0 phone:mb-0 sm:mb-2 text-base phone:text-xs sm:text-xl lg:text-[1rem] xl:text-sm 2xl:text-base 3xl:text-xl bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500'
             />
 
           <label htmlFor="email" className='sr-only'>enter your email address</label>
@@ -38,7 +38,7 @@ const ContactBox = () => {
             id='email' 
             name='email' 
             placeholder='email@example.com' 
-            className='mt-2 w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 mb-0 phone:mb-0 sm:mb-2 text-base phone:text-xs sm:text-xl lg:text-[1rem] xl:text-sm 2xl:text-lg bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 invalid:border-red-500 invalid:border-2'
+            className='mt-2 w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 mb-0 phone:mb-0 sm:mb-2 text-base phone:text-xs sm:text-xl lg:text-[1rem] xl:text-sm 2xl:text-base 3xl:text-xl bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 invalid:border-red-500 invalid:border-2'
             />
 
           {
@@ -52,7 +52,7 @@ const ContactBox = () => {
               placeholder='message' 
               cols="30" 
               rows="8"
-              className='mt-2 w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 text-base xl:text-sm 2xl:text-lg bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-none'
+              className='mt-2 w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 text-base xl:text-sm 2xl:text-base bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-none'
               />
             </>
             : width == xlBreakpoint || width == xxlBreakpoint || width >= xxxlBreakpoint ?
@@ -65,7 +65,7 @@ const ContactBox = () => {
               placeholder='message' 
               cols="30" 
               rows="7"
-              className='mt-2 w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 text-base bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-none'
+              className='mt-2 w-full px-3 py-2 phone:py-1 lg:py-2 sm:p-4 text-base xl:text-sm 2xl:text-base 3xl:text-xl bg-slate-100 border border-slate-500 rounded-md shadow-sm placeholder-slate-400 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500 resize-none'
               />
             </>
             :
