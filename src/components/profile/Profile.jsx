@@ -12,7 +12,7 @@ import Contacts from '../../pages/contacts/Contact'
 const Profile = () => {
   
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 844;
+  const breakpoint = 640;
 
   useEffect(() => {
   const handleResizeWindow = () => setWidth(window.innerWidth);
