@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import { GoMailRead, FaLinkedin, FiPhone, IoMdPaperPlane } from 'react-icons/all'
+import { GoMailRead, FaLinkedin, BsTelephone, IoMdPaperPlane } from 'react-icons/all'
 import ContactBox from './ContactBox';
 
 const Contact = () => {
@@ -71,7 +71,7 @@ const Contact = () => {
             </div>
 
             <div className="icon text-5xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl ml-10 mb-1 phone:ml-0 sm:mb-4 phone:mb-0 lg:mb-2 xl:mb-5 flex phone:justify-start items-center">
-              <FiPhone />
+              <BsTelephone />
               <div className='text-base phone:text-sm sm:text-lg lg:text-sm xl:text-lg  ml-4 py-4 phone:py-3 sm:py-6 cursor-pointer hover:scale-110 duration-300 ease-in-out'>
                 <a href="tel:+12265015420">+1 226-501-5420</a>
               </div>

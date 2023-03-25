@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 
 import { GoChevronRight } from 'react-icons/all'
@@ -6,12 +6,33 @@ import Social from './Social';
 import selfPortraitSlate from '../assets/selfPortraitSlate.png';
 
 const Home = () => {
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+  const breakpoint = 640;
+
+  useEffect(() => {
+  const handleResizeWindow = () => setWidth(window.innerWidth);
+  const handleHeightResize = () => setWidth(window.innerHeight);
+    // subscribe to window resize event "onComponentDidMount"
+    window.addEventListener("resize", handleResizeWindow);
+    window.addEventListener("resize", handleHeightResize);
+    console.log ("Width: ", width + "px")
+    console.log ("Height: ", height + "px")
+    // console.log ("Height: ", height)
+    return () => {
+      // unsubscribe "onComponentDestroy"
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
+
+
   return (
     <div className='mainCardContainer flex justify-center items-center flex-wrap phone:flex-nowrap bg-slate-100'>
       
       <div className="leftSideContainer flex w-full lg:w-3/4">
         
-        <div className="textContainer pl-4 my-10 phone:pl-10 lg:px-14">
+        <div className="textContainer pl-4 my-10 md:pl-14 md:pr-6 phone:pl-10 lg:px-14">
           
           <div className='header uppercase font-sans font-black text-slate-700 sm:mt-14 phone:mt-0 2xl:mt-20 mb-2 lg:mb-4'>
             <h3 className='tracking-wide text-2xl sm:text-3xl phone:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl mb-2 phone:mb-0'>

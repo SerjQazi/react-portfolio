@@ -71,7 +71,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-col-reverse phone:grid grid-cols-3 phone:grid-cols-4">
+            <div className="flex flex-col-reverse phone:grid grid-cols-3 phone:grid-cols-4 m">
               
               <div className="col-span-2 phone:col-span-3 lg:col-span-2 bg-slate-700 drop-shadow-lg">
                 <Skills />              
