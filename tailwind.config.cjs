@@ -11,7 +11,7 @@ module.exports = {
         cursive: ['Train One, cursive'],
       },
       screens: {
-        'phone': '820px',
+        'phone': '700px',
         '3xl': '1550px',
         // => @media (min-width: 640px) { ... }
       },
