@@ -24,7 +24,7 @@ const ContactBox = () => {
   return (
       <div className='flex flex-col justify-center items-center text-slate-700 phone:w-1/2 lg:w-7/12'>
 
-        <form className='flex flex-col justify-center items-center w-full' name="contact" netlify>
+        <form className='flex flex-col justify-center items-center w-full' name="contact" method="POST" data-netlify="true">
           <fieldset>
             <label htmlFor="name" className='sr-only'>enter your name</label>
               <input type='text' 
