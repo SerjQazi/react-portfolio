@@ -39,10 +39,10 @@ const Profile = () => {
 
       <div className="phone:grid col-span-4">
         <Routes>
-          <Route path='about' element={<About/>} />
-          <Route path='resume' element={<Resume/>} />
-          <Route path='portfolio' element={<Portfolio/>} />
-          <Route path='contacts' element={<Contacts/>} />
+          <Route path='/about' element={<About/>} />
+          <Route path='/resume' element={<Resume/>} />
+          <Route path='/portfolio' element={<Portfolio/>} />
+          <Route path='/contacts' element={<Contacts/>} />
         </Routes>
       </div>
       
