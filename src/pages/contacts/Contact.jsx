@@ -57,7 +57,7 @@ const Contact = () => {
 
         <div className="lowerCont phone:flex flex-row-reverse justify-center items-start ">
 
-          <div className='my-4 phone:my-1 sm:my-14 lg:my-2 xl:my-10 2xl:my-12 phone:mx-10 text-slate-700 sm:flex sm:flex-wrap sm:justify-evenly sm:items-center phone:flex-col phone:justify-center phone:items-start'>
+          <div className='my-4 phone:my-1 sm:my-14 lg:my-2 xl:my-10 2xl:my-12 phone:mx-10 text-slate-700 sm:flex sm:flex-wrap sm:justify-evenly sm:items-center phone:flex-col phone:justify-center phone:items-start px-10 md:px-0'>
 
             <div className="icon text-4xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl mb-1 ml-14 sm:ml-0 sm:mb-4 phone:mb-0 lg:mb-2 xl:mb-5 flex phone:justify-start items-center">
               <GoMailRead />
