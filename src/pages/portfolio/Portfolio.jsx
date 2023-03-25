@@ -19,7 +19,7 @@ const Portfolio = () => {
   const desktop = 'uppercase text-center font-black tracking-widest text-slate-700 phone:text-xl sm:text-2xl lg:text-6xl xl:text-5xl 2xl:text-6xl py-6 phone:py-2'
 
   return (
-      <div className='flex justify-center items-center bg-slate-100 phone:ml-2 lg:ml-0 border-2 border-red-500'>
+      <div className='flex justify-center items-center bg-slate-100 border-2 border-red-500'>
         <div className="wrapper w-full lg:w-10/12 px-2 phone:h-auto sm:px-4 phone:px-0 phone:pr-2">
 
           <div className='flex flex-row-reverse justify-between sm:flex-col mt-4 mb-2 phone:mb-2 sm:mb-4'>

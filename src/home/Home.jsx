@@ -11,10 +11,10 @@ const Home = () => {
       
       <div className="leftSideContainer flex w-full lg:w-3/4">
         
-        <div className="textContainer lg:px-14">
+        <div className="textContainer pl-4 my-10 phone:pl-10 lg:px-14">
           
-          <div className='header uppercase font-sans font-black text-slate-700 mt-14 2xl:mt-20 mb-2 lg:mb-4'>
-            <h3 className='tracking-wide text-2xl sm:text-3xl phone:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl mb-2'>
+          <div className='header uppercase font-sans font-black text-slate-700 sm:mt-14 phone:mt-0 2xl:mt-20 mb-2 lg:mb-4'>
+            <h3 className='tracking-wide text-2xl sm:text-3xl phone:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl mb-2 phone:mb-0'>
               Hi There!
             </h3>
             <div className="flex mb-2 md:mb-4 xl:mb-0">
@@ -28,11 +28,11 @@ const Home = () => {
           </div>
 
 
-          <h3 className='tracking-wide uppercase font-bold  text-sm phone:text-xs lg:text-sm xl:text-base 2xl:text-lg text-slate-700 bg-yellow-500 w-fit mb-2 sm:mb-4 phone:mb-2 xl:mb-4 px-2.5 py-0.5 sm:py-1'>
+          <h3 className='tracking-wide uppercase font-bold text-sm phone:text-xs lg:text-sm xl:text-base 2xl:text-lg text-slate-700 bg-yellow-500 w-fit mb-2 sm:mb-4 phone:mb-2 xl:mb-4 px-2.5 py-0.5 sm:py-1'>
             Frontend Developer
           </h3>
 
-          <div className="tracking-normal font-thin text-xs sm:text-base phone:text-xs lg:text-sm xl:text-base 2xl:text-lg text-slate-700 mb-4 lg:mb-8 2xl:mb-10">
+          <div className="tracking-normal font-thin text-xs sm:text-base phone:text-xs lg:text-sm xl:text-base 2xl:text-lg text-slate-700 mb-4 phone:mb-6 lg:mb-8 2xl:mb-10">
             <p>
               A Frontend Developer with a passion for photography and graphic design based out of Guelph, Ontario. Fueled mostly by coffee, I challenge myself everyday to master the tools and concepts of Frontend Development. I am passionate about creating impactful web applications using <span className='font-bold'>React</span>, <span className='font-bold'>JavaScript</span>, <span className='font-bold'>HTML</span>, <span className='font-bold'>SASS</span> and <span className='font-bold'>Tailwind</span>. I find myself focused on minimalist clean designs that provide a playful and engaging user experience.
             </p>
