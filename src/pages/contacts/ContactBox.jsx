@@ -24,9 +24,14 @@ const ContactBox = () => {
   return (
       <div className='flex flex-col justify-center items-center text-slate-700 phone:w-1/2 lg:w-7/12'>
 
-        <form name="contact" netlify='true' className='flex flex-col justify-center items-center w-full'>
+        <form name="contact" method='post' data-netlify='true' className='flex flex-col justify-center items-center w-full'>
+
+            <input type="hidden" name='form-name' value='contact' />
+
             <label htmlFor="name" className='sr-only'>enter your name</label>
-              <input type='text' 
+              <input 
+              required
+              type='text'
               id='name' 
               name='name' 
               placeholder='name' 
@@ -35,6 +40,7 @@ const ContactBox = () => {
 
             <label htmlFor="email" className='sr-only'>enter your email address</label>
               <input 
+              required
               type='email' 
               id='email' 
               name='email' 
@@ -47,6 +53,7 @@ const ContactBox = () => {
               <>
                 <label htmlFor="message" className='sr-only'>enter your message</label>
                 <textarea 
+                required
                 type='text' 
                 id='message' 
                 name='message' 
