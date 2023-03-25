@@ -59,7 +59,7 @@ const Contact = () => {
 
           <div className='my-4 phone:my-1 sm:my-14 lg:my-2 xl:my-10 2xl:my-12 phone:mx-10 text-slate-700 sm:flex sm:flex-wrap sm:justify-evenly sm:items-center phone:flex-col phone:justify-center phone:items-start'>
 
-            <div className="icon text-5xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl ml-10 mb-1 phone:ml-0 sm:mb-4 phone:mb-0 lg:mb-2 xl:mb-5 flex phone:justify-start items-center">
+            <div className="icon text-5xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl mb-1 ml-10 sm:ml-0  ml-10 sm:ml-0sm:mb-4 phone:mb-0 lg:mb-2 xl:mb-5 flex phone:justify-start items-center">
               <GoMailRead />
 
               <div className="text-base phone:text-sm sm:text-lg lg:text-sm xl:text-lg ml-4 py-4 phone:py-3  sm:py-6 cursor-pointer hover:scale-110 duration-300 ease-in-out">
@@ -70,14 +70,14 @@ const Contact = () => {
 
             </div>
 
-            <div className="icon text-5xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl ml-10 mb-1 phone:ml-0 sm:mb-4 phone:mb-0 lg:mb-2 xl:mb-5 flex phone:justify-start items-center">
+            <div className="icon text-5xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl mb-1 ml-10 sm:ml-0 sm:mb-4 phone:mb-0 lg:mb-2 xl:mb-5 flex phone:justify-start items-center">
               <BsTelephone />
               <div className='text-base phone:text-sm sm:text-lg lg:text-sm xl:text-lg  ml-4 py-4 phone:py-3 sm:py-6 cursor-pointer hover:scale-110 duration-300 ease-in-out'>
                 <a href="tel:+12265015420">+1 226-501-5420</a>
               </div>
             </div>
             
-            <div className="icon text-5xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl ml-10 mb-1 phone:ml-0 flex phone:justify-start items-center">
+            <div className="icon text-5xl phone:text-2xl sm:text-6xl lg:text-4xl xl:text-5xl mb-1 ml-10 sm:ml-0 flex phone:justify-start items-center">
               <FaLinkedin />
               <div className='text-base phone:text-sm sm:text-lg lg:text-sm xl:text-lg  ml-4 py-4 phone:py-3 sm:py-6 cursor-pointer hover:scale-110 duration-300 ease-in-out'>
                 <Link to='https://www.linkedin.com/in/serjqazi/' target="_blank">

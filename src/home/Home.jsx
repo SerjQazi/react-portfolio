@@ -32,10 +32,10 @@ const Home = () => {
       
       <div className="leftSideContainer flex w-full lg:w-3/4">
         
-        <div className="textContainer pl-4 my-10 md:pl-14 md:pr-6 phone:pl-10 lg:px-14">
+        <div className="textContainer pl-4 my-10 sm:pl-10 md:pl-14 md:pr-6 phone:pl-10 lg:px-14">
           
-          <div className='header uppercase font-sans font-black text-slate-700 sm:mt-14 phone:mt-0 2xl:mt-20 mb-2 lg:mb-4'>
-            <h3 className='tracking-wide text-2xl sm:text-3xl phone:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl mb-2 phone:mb-0'>
+          <div className='header uppercase font-sans font-black text-slate-700 mt-0 phone:mt-0 2xl:mt-20 mb-2 lg:mb-4'>
+            <h3 className='tracking-wide text-2xl sm:text-3xl phone:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl mb-0'>
               Hi There!
             </h3>
             <div className="flex mb-2 md:mb-4 xl:mb-0">
