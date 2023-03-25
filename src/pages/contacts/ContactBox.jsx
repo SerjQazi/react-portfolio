@@ -24,7 +24,7 @@ const ContactBox = () => {
   return (
       <div className='flex flex-col justify-center items-center text-slate-700 phone:w-1/2 lg:w-7/12'>
 
-        <form name="contact" method='post' data-netlify='true' className='flex flex-col justify-center items-center w-full'>
+        <form name="contact" method='post' className='flex flex-col justify-center items-center w-full'>
 
             <input type="hidden" name='form-name' value='contact' />
 
